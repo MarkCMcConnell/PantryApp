@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import IngredientDetail from './IngredientDetail.vue';
+import IngredientDetail from '../IngredientDetail/IngredientDetail.vue';
 
 export default {
     components: {

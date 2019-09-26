@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 
 // Mock data
-import pantry from '../../data/data';
+import pantry from '../../../data/data';
 console.log(pantry);
 Vue.use(Vuex);
 

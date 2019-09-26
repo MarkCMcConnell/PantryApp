@@ -7,7 +7,7 @@
 
 <script>
 // Components
-import NavBar from './components/ui/NavBar.vue';
+import NavBar from './shared/components/ui/NavBar/NavBar.vue';
 
 export default {
   components: {

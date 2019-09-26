@@ -7,7 +7,7 @@
 
 <script>
 // Components
-import IngredientList from '../components/ingredients/IngredientList.vue';
+import IngredientList from '../ingredients/IngredientList/IngredientList.vue';
 
 export default {
   name: 'Pantry',
