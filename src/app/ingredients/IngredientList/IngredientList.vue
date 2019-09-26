@@ -20,7 +20,7 @@ export default {
     },
     data () {
         return {
-            ingredients: this.$store.ingredients,
+            ingredients: this.$store.state.ingredients,
         }
     }
 }
