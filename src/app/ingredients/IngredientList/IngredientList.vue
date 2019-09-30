@@ -4,6 +4,7 @@
             <li
                 v-for="ingredient in ingredients"
                 :key="ingredient.name"
+                @click="showIngredient(ingredient.ingredientId)"
             >
                 {{ ingredient.name }} - {{ ingredient.quantity }}{{ ingredient.unit }}
             </li>
@@ -22,7 +23,12 @@ export default {
         return {
             ingredients: this.$store.state.ingredients,
         }
-    }
+    },
+    methods: {
+        showIngredient (id) {
+            this.$router.push({ path: `/ingredients/${id}` });
+        },
+    },
 }
 </script>
 

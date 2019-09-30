@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<h2></h2>
+		<h2>Detail Page for {{ ingredient.name }}</h2>
 	</div>
 </template>
 
@@ -8,8 +8,12 @@
 export default {
 	data () {
 		return {
-			ingredients: this.$store.ingredients
+			ingredientId: this.$route.params.ingredientId,
+			ingredient: this.$store.ingredients,
 		}
+	},
+	mounted () {
+		
 	}
 }
 </script>
