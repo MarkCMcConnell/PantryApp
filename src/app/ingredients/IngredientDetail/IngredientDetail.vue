@@ -1,20 +1,22 @@
 <template>
 	<div>
-		<h2>Detail Page for {{ ingredient.name }}</h2>
+		<h2>Detail Page for {{ ingredient.id }}</h2>
+		<p>Name: {{ ingredient.name }}</p>
 	</div>
 </template>
 
 <script>
+import ingredients from '../../../../data/data.js';
+
 export default {
 	data () {
 		return {
-			ingredientId: this.$route.params.ingredientId,
-			ingredient: this.$store.ingredients,
+			ingredient: this.$store.state.ingredients[this.$route.params.id],
 		}
 	},
-	mounted () {
-		
-	}
+	// mounted () {
+	// 	this.ingredient = this.id;
+	// }
 }
 </script>
 

@@ -4,9 +4,9 @@
             <li
                 v-for="ingredient in ingredients"
                 :key="ingredient.name"
-                @click="showIngredient(ingredient.ingredientId)"
+                @click.prevent="showIngredient(ingredient.id)"
             >
-                {{ ingredient.name }} - {{ ingredient.quantity }}{{ ingredient.unit }}
+                {{ ingredient.name }} - {{ ingredient.quantity }} {{ ingredient.unit }}
             </li>
         </ul>
     </div>
@@ -32,6 +32,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+    li {
+        cursor: pointer;
+        margin: 0.5em 0;
+    }
 </style>

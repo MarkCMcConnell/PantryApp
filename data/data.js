@@ -1,6 +1,6 @@
 export default [
   {
-    ingredientId: 1,
+    id: 1,
     name: 'Hamburger',
     type: 'Meat',
     size: 1,
@@ -9,7 +9,7 @@ export default [
     quantity: 2,
   },
   {
-    ingredientId: 2,
+    id: 2,
     name: 'Garlic Powder',
     type: 'Spice',
     size: 9.25,
