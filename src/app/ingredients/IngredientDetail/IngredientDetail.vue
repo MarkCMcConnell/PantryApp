@@ -1,7 +1,12 @@
 <template>
 	<div>
-		<h2>Detail Page for {{ ingredient.id }}</h2>
-		<p>Name: {{ ingredient.name }}</p>
+		<h2>{{ ingredient.name }}</h2>
+        <p>Type: {{ ingredient.type }}</p>
+        <p>Size: {{ ingredient.size }} {{ ingredient.unit }}</p>
+        <p v-if="ingredient.left <= 1">Amount left: {{ ingredient.left }} {{ ingredient.unit }}</p>
+        <p v-if="ingredient.left > 1 && ingredient.unit === 'lb'">
+            Amount left: {{ ingredient.left }} {{ ingredient.unit }}s
+        </p>
 	</div>
 </template>
 
@@ -14,9 +19,6 @@ export default {
 			ingredient: this.$store.state.ingredients[this.$route.params.id],
 		}
 	},
-	// mounted () {
-	// 	this.ingredient = this.id;
-	// }
 }
 </script>
 
