@@ -1,13 +1,12 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-
-// Mock data
-import pantry from '../../../data/data';
+import ingredients from './modules/ingredients';
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {
-    ingredients: pantry,
+  strict: true,
+  modules: {
+    ingredients,
   },
 });
