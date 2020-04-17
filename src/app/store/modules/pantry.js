@@ -1,8 +1,8 @@
-import ingredients from '../../../../data/data';
+import ingredients from '../../data/data';
 
 export default {
   state: {
-    ingredients,
+    ingredients: ingredients,
   },
   getters: {
 

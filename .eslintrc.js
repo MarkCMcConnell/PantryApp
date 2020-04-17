@@ -7,7 +7,6 @@ module.exports = {
 
   extends: [
     'plugin:vue/essential',
-    '@vue/airbnb',
   ],
 
   rules: {
@@ -32,6 +31,5 @@ module.exports = {
 
   extends: [
     'plugin:vue/recommended',
-    '@vue/airbnb',
   ],
 };

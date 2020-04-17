@@ -1,12 +1,12 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import ingredients from './modules/ingredients';
+import pantry from './modules/pantry';
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  strict: true,
-  modules: {
-    ingredients,
-  },
+    strict: true,
+    modules: {
+        pantry,
+    },
 });

@@ -13,28 +13,23 @@
 </template>
 
 <script>
-import IngredientDetail from '../IngredientDetail/IngredientDetail.vue';
-
 export default {
-  components: {
-    IngredientDetail,
-  },
-  data() {
+  data () {
     return {
-      ingredients: this.$store.state.ingredients,
+      ingredients: this.$store.state.pantry.ingredients,
     };
   },
   methods: {
-    showIngredient(id) {
-      this.$router.push({ path: `/ingredients/${id}` });
+    showIngredient (id) {
+      this.$router.push({path: `/ingredients/${id}`});
     },
   },
 };
 </script>
 
 <style scoped>
-    li {
-        cursor: pointer;
-        margin: 0.5em 0;
-    }
+li {
+  cursor: pointer;
+  margin: 0.5em 0;
+}
 </style>
